@@ -1,0 +1,290 @@
+
+
+/* Style the navbar */
+nav {
+    background-color: white; /* Background color for the navbar */
+    padding: 12px;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    align-items: center; /* Vertically center the brand and menu items */
+    justify-content: space-between; /* Create space between brand and menu */
+    margin-top: -10px;
+    position: sticky;
+    top: 0; /* Stick the navbar at the top of the viewport */
+    z-index: 100;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: flex-end;
+}
+
+/* Style the navigation items */
+nav li {
+   
+    margin-right: 20px; /* Add spacing between items */
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    background-color: #003049;
+    border-radius: 5px;
+}
+
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color:white; /* Change link color on hover */
+    padding: 10px;
+}
+
+footer {
+    background-color: #00121b; /* Background color for the navbar */
+    padding: 15px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: center;
+}
+
+/* Style the navigation items */
+footer li {
+   
+    margin-right: 20px; /* Add spacing between items */
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    background-color: #AEDFF7;
+    box-shadow: 0 0 10px 3px #AEDFF7; /* Apply a blurred border effect */
+}
+
+footer h2 {
+    color: #AEDFF7;
+    text-align: center;
+}
+
+
+/* Apply styles to the centered div */
+
+
+.main {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: whitesmoke;
+}
+
+.main a {
+    text-decoration: none;
+    color: white;
+    
+    padding: 10px;
+}
+
+/* Change link color on hover */
+.main a:hover {
+    color:white; /* Change link color on hover */
+    padding: 10px;
+    background-color: #003049;
+}
+
+
+.main h2 {
+    background-color: #003049;
+}
+
+.center-button {
+    text-align: center;
+    /* Optionally, you can use other CSS properties to style the container */
+  }
+
+button {
+    color:white; /* Change link color on hover */
+    padding: 10px;
+    background-color: #003049;
+    margin: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px white(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+button:hover{
+    padding: 20px;
+}
+
+
+h1 {
+    margin: 20px;
+    /* color: snow; */
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.vince{
+    margin: 20px;
+    
+}
+
+.vince-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.vince-pic {
+    max-width: 40%;
+    margin-right: 200px;
+}
+.vince-bg {
+    background-color: #003049;
+    color: snow;
+    max-width: 40%;
+    padding: 20px;
+    border: 1px solid #ff2400;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: large;
+    margin-top: 38px;
+}
+
+.Mentzer {
+    margin: 20px;
+    
+}
+
+.Mentzer-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+
+.Mentzer-pic {
+    max-width: 40%;
+    margin-right: 200px;
+}
+.Mentzer-bg {
+    background-color: #003049;
+    color: snow;
+    max-width: 40%;
+    padding: 20px;
+    border: 1px solid #ff2400;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: large;
+    margin-top: 38px;
+    margin-top: -165px;
+}
+
+.Meadows {
+    margin: 20px;
+    
+}
+
+.Meadows-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.Meadows-pic {
+    max-width: 40%;
+    
+}
+
+.starret-more {
+    margin-bottom: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    
+}
+
+.mobility-info{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.Meadows-bg {
+    max-width: 40%;
+    padding: 20px;
+    text-align: justify;
+    font-size: large;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 2px 4px white(0, 0, 0, 0.5);
+    
+}
+
+.container {
+    max-width: 400px;
+    max-height: 500px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-container {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.image-box {
+    flex: 1;
+    padding: 10px;
+}
+
+.description-box {
+    flex: 1;
+    padding: 10px;
+}
+
+.description {
+    margin: 0;
+}
+

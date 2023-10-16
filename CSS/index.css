@@ -1,0 +1,128 @@
+/* Style the navbar */
+nav {
+    
+    padding: 12px;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    align-items: center; /* Vertically center the brand and menu items */
+    justify-content: space-between; /* Create space between brand and menu */
+    margin-top: -10px;
+    position: sticky;
+    top: 0; /* Stick the navbar at the top of the viewport */
+    z-index: 100;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    transition: background-color 1s ease; /* Use background-color transition */
+}
+
+.brand {
+    font-size: 15px; /* Adjust the font size as needed */
+    margin-left: 20px; /* Add spacing to the left of the brand */
+    color: #ff2400;
+    box-shadow: 0 0 10px 3px #AEDFF7; /* Apply a blurred border effect */
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 30px rgba(255, 0, 0, 0.5);
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: flex-end;
+}
+
+/* Style the navigation items */
+nav li {
+    margin-right: 20px; /* Add spacing between items */
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color:white; /* Change link color on hover */
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -100px;
+}
+
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: center;
+}
+
+/* Style the navigation items */
+footer li {
+   
+    margin-right: 20px; /* Add spacing between items */
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    background-color: #003049;
+     /* Apply a blurred border effect */
+}
+
+
+
+/* Apply styles to the centered div */
+.welcome {
+    width: 90%; /* Set a fixed width or use percentages as needed */
+    margin-top: 30px;
+    text-align: center; /* Center content horizontally */
+    margin-left: 50px;
+}
+
+
+ .main {
+    display: flex;
+    height: 100vh;
+    
+    margin: 0;
+    padding: 0;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-color 3s ease;
+    background-position: center center; background-size: 100% 100%;  height: 100vh; width: 100vw;
+}  
+
+
+h1 {
+    color: white;
+    font-size: 60px; /* Adjust font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: white;
+    font-size: 40px; /* Adjust font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+

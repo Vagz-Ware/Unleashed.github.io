@@ -1,0 +1,287 @@
+
+
+/* Style the navbar */
+nav {
+    background-color: white; /* Background color for the navbar */
+    padding: 12px;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    align-items: center; /* Vertically center the brand and menu items */
+    justify-content: space-between; /* Create space between brand and menu */
+    margin-top: -10px;
+    position: sticky;
+    top: 0; /* Stick the navbar at the top of the viewport */
+    z-index: 100;
+}
+.brand {
+    font-size: 15px; /* Adjust the font size as needed */
+    margin-left: 20px; /* Add spacing to the left of the brand */
+    color: #ff2400;
+    box-shadow: 0 0 10px 3px #AEDFF7; /* Apply a blurred border effect */
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 30px rgba(255, 0, 0, 0.5);
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: flex-end;
+}
+
+/* Style the navigation items */
+nav li {
+   
+    margin-right: 20px; /* Add spacing between items */
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    background-color: #003049;
+    border-radius: 5px;
+}
+
+nav li:hover {
+    box-shadow: 0 0 10px 3px #ff2400;
+    
+}
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color:white; /* Change link color on hover */
+    padding: 10px;
+}
+
+footer {
+    background-color: #00121b; /* Background color for the navbar */
+    padding: 15px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: center;
+}
+
+/* Style the navigation items */
+footer li {
+   
+    margin-right: 20px; /* Add spacing between items */
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    background-color: #AEDFF7;
+    box-shadow: 0 0 10px 3px #AEDFF7; /* Apply a blurred border effect */
+}
+
+footer h2 {
+    color: #AEDFF7;
+    text-align: center;
+}
+
+
+/* Apply styles to the centered div */
+.welcome {
+    width: 90%; /* Set a fixed width or use percentages as needed */
+    height: 200px; /* Set a fixed height or use percentages as needed */
+    text-align: center; /* Center content horizontally */
+    
+}
+
+
+.main {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: whitesmoke;
+}
+
+.main a {
+    text-decoration: none;
+    color: white;
+    
+    padding: 10px;
+}
+
+/* Change link color on hover */
+.main a:hover {
+    color:white; /* Change link color on hover */
+    padding: 10px;
+    background-color: #003049;
+}
+
+
+h2 {
+    background-color: #003049;
+}
+
+.center-button {
+    text-align: center;
+    /* Optionally, you can use other CSS properties to style the container */
+  }
+
+button {
+    color:white; /* Change link color on hover */
+    padding: 10px;
+    background-color: #003049;
+    margin: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px white(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+button:hover{
+    padding: 20px;
+}
+
+
+h1 {
+    margin: 20px;
+    /* color: snow; */
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.vince{
+    margin-top: 30px;
+}
+
+/* .vince-info {
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start; 
+} */
+
+.image-description-container {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+  }
+  
+  .image-description-container img {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin-right: 90px; /* Add spacing between the image and text */
+    margin-left: 20px;
+  }
+  
+  .image-description-container p {
+    margin-left: 10; /* Remove default margin from the paragraph */
+    font-size: large;
+  }
+  
+
+.vince-pic {
+    flex: 1;
+  min-width: 0; /* Ensure items can shrink to fit content */
+  padding: 0px; /* Optional: Add padding for spacing */
+  
+}
+.vince-bg {
+    background-color: #003049;
+    color: snow;
+    padding: 20px;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: large;
+    flex: 1;
+  min-width: 0; /* Ensure items can shrink to fit content */
+  padding: 10px; /* Optional: Add padding for spacing */
+  
+    
+}
+
+.Mentzer {
+    margin: 20px;
+    
+}
+
+.Mentzer-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+
+.Mentzer-pic {
+    max-width: 40%;
+    margin-right: 200px;
+}
+.Mentzer-bg {
+    background-color: #003049;
+    color: snow;
+    max-width: 40%;
+    padding: 20px;
+    border: 1px solid #ff2400;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: large;
+    margin-top: 38px;
+    margin-top: -165px;
+}
+
+.Meadows {
+    margin: 20px;
+    
+}
+
+.Meadows-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+
+.Meadows-pic {
+    max-width: 40%;
+    margin-right: 300px;
+}
+.Meadows-bg {
+    background-color: #003049;
+    color: snow;
+    max-width: 40%;
+    padding: 20px;
+    border: 1px solid #ff2400;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: large;
+    margin-top: 38px;
+    margin-top: -120px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 2px 4px white(0, 0, 0, 0.5);
+    
+}
+
+img {
+    max-height: 400px;
+    max-width: 500px;
+}

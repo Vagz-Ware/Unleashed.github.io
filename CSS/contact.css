@@ -1,0 +1,140 @@
+/* Style the navbar */
+nav {
+    background-color: white; /* Background color for the navbar */
+    padding: 12px;
+    margin-left: -50px;
+    margin-right: -15px;
+    display: flex;
+    align-items: center; /* Vertically center the brand and menu items */
+    justify-content: space-between; /* Create space between brand and menu */
+    margin-top: -10px;
+    position: sticky;
+    top: 0; /* Stick the navbar at the top of the viewport */
+    z-index: 100;
+}
+.brand {
+    font-size: 15px; /* Adjust the font size as needed */
+    margin-left: 20px; /* Add spacing to the left of the brand */
+    color: #ff2400;
+    box-shadow: 0 0 10px 3px #AEDFF7; /* Apply a blurred border effect */
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 30px rgba(255, 0, 0, 0.5);
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: flex-end;
+}
+
+/* Style the navigation items */
+nav li {
+    margin-right: 20px; /* Add spacing between items */
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    background-color: #003049;
+    border-radius: 5px;
+}
+
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Change link color on hover */
+nav a:hover {    margin-left: -10px;
+    margin-right: -10px;
+    color:white; /* Change link color on hover */
+    padding: 10px;
+}
+
+footer {
+    background-color: #00121b; /* Background color for the navbar */
+    padding: 10px;
+    margin-left: -50px;
+    margin-right: -50px;
+    
+}
+
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: center;
+}
+
+/* Style the navigation items */
+footer li {
+   
+    margin-right: 20px; /* Add spacing between items */
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    background-color: #003049;
+     /* Apply a blurred border effect */
+}
+
+footer h2 {
+    text-align: center;
+}
+
+
+
+.main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-left: -10px;
+}
+
+
+.contact-container {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-size: large;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #ff2400;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Move the button to the right */
+}
