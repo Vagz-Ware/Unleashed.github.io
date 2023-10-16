@@ -2,7 +2,7 @@
 
 /* Style the navbar */
 nav {
-    background-color: white; /* Background color for the navbar */
+    background-color: #003049;
     padding: 12px;
     margin-left: -10px;
     margin-right: -10px;
@@ -30,7 +30,6 @@ nav li {
     margin-right: 20px; /* Add spacing between items */
     margin-left: 20px; /* Add spacing between items */
     padding: 10px;
-    background-color: #003049;
     border-radius: 5px;
 }
 
@@ -48,36 +47,16 @@ nav a:hover {
 }
 
 footer {
-    background-color: #00121b; /* Background color for the navbar */
-    padding: 15px;
+    padding: 10px;
     margin-left: -10px;
     margin-right: -10px;
+    margin-bottom: -10px;
+    background-color: #003049;
 }
 
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Display list items in a row */
-    justify-content: center;
+footer p {
+    color: white;
 }
-
-/* Style the navigation items */
-footer li {
-   
-    margin-right: 20px; /* Add spacing between items */
-    margin-left: 20px; /* Add spacing between items */
-    padding: 10px;
-    background-color: #AEDFF7;
-    box-shadow: 0 0 10px 3px #AEDFF7; /* Apply a blurred border effect */
-}
-
-footer h2 {
-    color: #AEDFF7;
-    text-align: center;
-}
-
 
 /* Apply styles to the centered div */
 
@@ -134,13 +113,16 @@ button:hover{
     padding: 20px;
 }
 
+.holder {
+    background-color: #003049;
+}
 
 h1 {
-    margin: 20px;
-    /* color: snow; */
+    font-size: xx-large;
+    margin-top: 90px;
     padding: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
+    text-align: center;
+    color: white;
 }
 
 .vince{

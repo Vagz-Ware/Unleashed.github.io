@@ -1,17 +1,3 @@
-/* Style the navbar */
-nav {
-    
-    padding: 12px;
-    margin-left: -10px;
-    margin-right: -10px;
-    display: flex;
-    align-items: center; /* Vertically center the brand and menu items */
-    justify-content: space-between; /* Create space between brand and menu */
-    margin-top: -10px;
-    position: sticky;
-    top: 0; /* Stick the navbar at the top of the viewport */
-    z-index: 100;
-}
 
 body {
     margin: 0;
@@ -23,15 +9,20 @@ body {
     transition: background-color 1s ease; /* Use background-color transition */
 }
 
-.brand {
-    font-size: 15px; /* Adjust the font size as needed */
-    margin-left: 20px; /* Add spacing to the left of the brand */
-    color: #ff2400;
-    box-shadow: 0 0 10px 3px #AEDFF7; /* Apply a blurred border effect */
-    padding: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 30px rgba(255, 0, 0, 0.5);
-}
 
+/* Style the navbar */
+nav {
+    
+    padding: 12px;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    justify-content: flex-end; /* Create space between brand and menu */
+    margin-top: -10px;
+    position: sticky;
+    top: 0; /* Stick the navbar at the top of the viewport */
+    z-index: 100;
+}
 
 nav ul {
     list-style: none;
@@ -39,6 +30,7 @@ nav ul {
     margin: 0;
     display: flex; /* Display list items in a row */
     justify-content: flex-end;
+    
 }
 
 /* Style the navigation items */
@@ -67,7 +59,12 @@ footer {
     padding: 10px;
     margin-left: -10px;
     margin-right: -10px;
-    margin-top: -100px;
+    margin-bottom: -10px;
+    background-color: #003049;
+}
+
+footer p {
+    color: white;
 }
 
 
@@ -93,11 +90,13 @@ footer li {
 
 /* Apply styles to the centered div */
 .welcome {
-    width: 90%; /* Set a fixed width or use percentages as needed */
+    width: 45%; /* Set a fixed width or use percentages as needed */
     margin-top: 30px;
     text-align: center; /* Center content horizontally */
     margin-left: 50px;
 }
+
+
 
 
  .main {
@@ -122,7 +121,7 @@ h1 {
 
 h2 {
     color: white;
-    font-size: 40px; /* Adjust font size */
+    font-size: 30px; /* Adjust font size */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 

@@ -1,10 +1,11 @@
-
 body {
-    background-color: rgb(235, 232, 232);
+    background-color: whitesmoke;
 }
+
 
 /* Style the navbar */
 nav {
+    background-color: #003049;
     padding: 12px;
     margin-left: -10px;
     margin-right: -10px;
@@ -16,7 +17,6 @@ nav {
     top: 0; /* Stick the navbar at the top of the viewport */
     z-index: 100;
 }
-
 
 
 nav ul {
@@ -33,10 +33,8 @@ nav li {
     margin-right: 20px; /* Add spacing between items */
     margin-left: 20px; /* Add spacing between items */
     padding: 10px;
-    background-color: #003049;
     border-radius: 5px;
 }
-
 
 
 /* Style the navigation links */
@@ -51,37 +49,18 @@ nav a:hover {
     padding: 10px;
 }
 
+
 footer {
-    background-color: black; /* Background color for the navbar */
-    padding: 15px;
+    padding: 10px;
     margin-left: -10px;
     margin-right: -10px;
+    margin-bottom: -10px;
+    background-color: #003049;
 }
 
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Display list items in a row */
-    justify-content: center;
+footer p {
+    color: white;
 }
-
-/* Style the navigation items */
-footer li {
-   
-    margin-right: 20px; /* Add spacing between items */
-    margin-left: 20px; /* Add spacing between items */
-    padding: 10px;
-    background-color: #AEDFF7;
-    box-shadow: 0 0 10px 3px #AEDFF7; /* Apply a blurred border effect */
-}
-
-footer h2 {
-    color: #AEDFF7;
-    text-align: center;
-}
-
 
 /* Apply styles to the centered div */
 .welcome {
@@ -111,9 +90,7 @@ footer h2 {
 
 /* Change link color on hover */
 .main a:hover {
-    color:white; /* Change link color on hover */
     padding: 10px;
-    background-color: #003049;
 }
 
 
@@ -136,24 +113,17 @@ button {
     padding: 10px;
     margin: 20px;
     border-radius: 10px;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     font-family: 'Arial', sans-serif;
-    color: black;
+    border: 5px solid  #03a4fa;;
+    background-color: white;
 }
 
 button:hover{
-    padding: 20px;
+    padding: 15px;
 }
 
-
-h1 {
-    margin: 20px;
-    /* color: snow; */
-    padding: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
-}
 
 .vince{
     margin: 20px;
@@ -178,13 +148,13 @@ h1 {
     max-width: 40%;
     padding: 20px;
     text-align: justify;
-    font-size: large;
+    font-size: medium;
     margin-top: 0px;
 }
 
 .Mentzer {
     margin: 20px;
-    
+    margin-top: 60px;
 }
 
 .Mentzer-info {
@@ -192,8 +162,7 @@ h1 {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 50px;
-    
+    margin-top: 20px;
 }
 
 .Mentzer-pic {
@@ -204,14 +173,14 @@ h1 {
     max-width: 40%;
     padding: 20px;
     text-align: justify;
-    font-size: large;
-    margin-top: 38px;
-    margin-top: -165px;
+    font-size: medium;
+    margin-top: -210px;
+    margin-left: 100px;
 }
 
 .Meadows {
     margin: 20px;
-    
+    margin-top: 50px;
 }
 
 .Meadows-info {
@@ -219,7 +188,7 @@ h1 {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 30px;
     
 }
 
@@ -228,16 +197,12 @@ h1 {
     margin-right: 300px;
 }
 .Meadows-bg {
-    background-color: #003049;
-    color: snow;
+    color: black;
     max-width: 40%;
     padding: 20px;
-    border: 1px solid #ff2400;
     text-align: justify;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: large;
-    margin-top: 38px;
-    margin-top: -120px;
+    font-size: medium;
+    margin-top: -230px;
 }
 
 h2 {
@@ -248,4 +213,17 @@ h2 {
     text-shadow: 2px 2px 4px white(0, 0, 0, 0.5);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.holder {
+    background-color: #003049;
+}
+
+h1 {
+    font-size: xx-large;
+    margin-top: 90px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
 

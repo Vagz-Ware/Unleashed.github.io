@@ -1,18 +1,18 @@
-
+body {
+    background-color: whitesmoke;
+}
 
 /* Style the navbar */
 nav {
-    background-color: white; /* Background color for the navbar */
+    background-color: #003049;
     padding: 12px;
-    margin-left: -10px;
-    margin-right: -10px;
     display: flex;
-    align-items: center; /* Vertically center the brand and menu items */
-    justify-content: space-between; /* Create space between brand and menu */
-    margin-top: -10px;
+    justify-content: flex-end; /* Align the list to the right */
     position: sticky;
     top: 0; /* Stick the navbar at the top of the viewport */
     z-index: 100;
+    margin-right: -10px;
+    margin-left: -10px;
 }
 
 
@@ -30,7 +30,6 @@ nav li {
     margin-right: 20px; /* Add spacing between items */
     margin-left: 20px; /* Add spacing between items */
     padding: 10px;
-    background-color: #003049;
     border-radius: 5px;
 }
 
@@ -47,8 +46,76 @@ nav a:hover {
     padding: 10px;
 }
 
+
 footer {
-    background-color: #00121b; /* Background color for the navbar */
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+    background-color: #003049;
+}
+
+footer p {
+    color: white;
+}
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color:white; /* Change link color on hover */
+    padding: 10px;
+}
+
+/* Style the dropdown list */
+.dropdown {
+    position: relative;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003049;
+    list-style: none;
+    padding: 0;
+}
+
+/* Style the dropdown items */
+.dropdown-content li {
+    padding: 10px;
+}
+
+/* Show the dropdown content when the parent (Programs) is hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the navigation items */
+nav li {
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color: white; /* Change link color on hover */
+    padding: 10px;
+}
+
+footer {
+    background-color: #003049;
     padding: 15px;
     margin-left: -10px;
     margin-right: -10px;
@@ -90,7 +157,6 @@ footer h2 {
     width:100%;
     margin-left: -10px;
     margin-right: -10px;
-    background-color: whitesmoke;
 }
 
 .main a {
@@ -134,13 +200,16 @@ button:hover{
     padding: 20px;
 }
 
+.holder {
+    background-color: #003049;
+}
 
 h1 {
-    margin: 20px;
-    /* color: snow; */
+    font-size: xx-large;
+    margin-top: 90px;
     padding: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
+    text-align: center;
+    color: white;
 }
 
 .vince{
@@ -234,6 +303,7 @@ h1 {
     margin-left: 30px;
     margin-right: 30px;
     text-align: justify;
+    margin-bottom: 50px;
 }
 
 .Meadows-bg {
