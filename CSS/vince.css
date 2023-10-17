@@ -18,13 +18,16 @@ body {
 
 /* Style the dropdown items */
 .dropdown-content li {
-    padding: 10px;
+    padding: 1px;
+    margin: 10px;
+    
 }
 
 /* Show the dropdown content when the parent (Programs) is hovered */
 .dropdown:hover .dropdown-content {
     display: block;
     margin-top: 5px;
+    padding: 5px;
 }
 
 /* Style the navigation items */
