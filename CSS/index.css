@@ -9,6 +9,30 @@ body {
     transition: background-color 1s ease; /* Use background-color transition */
 }
 
+.blinking-text {
+    font-weight: bold;
+    animation: blink 4s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        color:#003049;
+    }
+    25% {
+        color: red;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: gold;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+
 /* Style the dropdown list */
 .dropdown {
     position: relative;
@@ -135,7 +159,7 @@ footer li {
 
 /* Apply styles to the centered div */
 .welcome {
-    width: 45%; /* Set a fixed width or use percentages as needed */
+    width: 70%; /* Set a fixed width or use percentages as needed */
     margin-top: 30px;
     text-align: center; /* Center content horizontally */
     margin-left: 50px;
