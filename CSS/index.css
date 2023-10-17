@@ -31,6 +31,7 @@ body {
 /* Show the dropdown content when the parent (Programs) is hovered */
 .dropdown:hover .dropdown-content {
     display: block;
+    margin-top: 5px;
 }
 
 /* Style the navigation items */

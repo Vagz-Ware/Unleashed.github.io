@@ -13,6 +13,7 @@ nav {
     z-index: 100;
     margin-right: -10px;
     margin-left: -10px;
+    margin-top: -10px;
 }
 
 
@@ -119,6 +120,8 @@ footer {
     padding: 15px;
     margin-left: -10px;
     margin-right: -10px;
+    margin-bottom: -10px;
+    margin-top: 20px;
 }
 
 
