@@ -1,3 +1,45 @@
+/* Style the dropdown list */
+.dropdown {
+    position: relative;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003049;
+    list-style: none;
+    padding: 0;
+}
+
+/* Style the dropdown items */
+.dropdown-content li {
+    padding: 10px;
+}
+
+/* Show the dropdown content when the parent (Programs) is hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the navigation items */
+nav li {
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color: white; /* Change link color on hover */
+    padding: 10px;
+}
 
 
 /* Style the navbar */
