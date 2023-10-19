@@ -2,6 +2,14 @@ body {
     background-color: whitesmoke;
 }
 
+.nav-container {
+    width: 100vw;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* Style the dropdown list */
 .dropdown {
     position: relative;
@@ -52,7 +60,6 @@ nav a:hover {
 
 /* Style the navbar */
 nav {
-    background-color: #003049;
     padding: 12px;
     margin-left: -10px;
     margin-right: -10px;
