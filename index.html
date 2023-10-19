@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unleashed - HomePage</title>
     <link rel="stylesheet" href="CSS/index.css">
+    <script src="index.js" defer></script>
 </head>
 <body style="background-image: url(images/karsten-winegeart-5sGYotxAuUA-unsplash.jpg);" >
     <nav>
-        <ul>
+        <div id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul id="navbar">
             <li style="background-color: #03a4fa;"><a href="index.html">Home</a></li>
             <li class="dropdown">
                 <a href="paths.html">Programs &#9662;</a>
@@ -22,7 +28,8 @@
             <li><a href="Mobility.html">Mobility</a></li>
             <li><a href="nutrition.html">Nutrition</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-        </ul></nav>
+        </ul>
+    </nav>
     <div class="main">
 
         
@@ -40,37 +47,6 @@
     <footer style="text-align: center;">
         <p>&copy;<span>2023</span><span> Unleashed. All rights reserved.</span></p>
     </footer>
-
-     <script>
-        // Define an array of image URLs
-        const images = [
-            
-            "images/karsten-winegeart-5sGYotxAuUA-unsplash.jpg",
-            "images/pexels-li-sun-2294361.jpg",
-            "images/athlete-8223797.jpg",
-            "images/pexels-pikx-by-panther-1547248.jpg",
-            "images/pexels-sabel-blanco-1638336.jpg",
-            "images/pexels-the-lazy-artist-gallery-2247179.jpg",
-            "images/pexels-victor-freitas-841130.jpg",
-            ""
-                ];
-        
-
-        const mainDiv = document.querySelector('body');
-
-// Function to change the background image
-function changeBackground() {
-    const index = Math.floor(Math.random() * images.length);
-    const imageUrl = images[index];
-    mainDiv.style.backgroundImage = `url('${imageUrl}')`;
-}
-
-// Change the background image every 5 seconds (5000 milliseconds)
-setInterval(changeBackground, 4000);
-
-// Call the function once to set an initial background image
-changeBackground();
-    </script>
     
 </body>
 </html>

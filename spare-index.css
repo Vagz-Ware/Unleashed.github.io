@@ -1,0 +1,178 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width:100vw;
+    /*transition: background-color 1s ease; Use background-color transition */
+}
+
+
+/* Style the navigation items */
+nav li {
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px; /* Add spacing between items */
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color: white; /* Change link color on hover */
+    padding: 10px;
+}
+
+/* Style the navbar */
+nav {
+    
+    padding: 12px;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    justify-content: flex-end; /* Create space between brand and menu */
+    margin-top: -10px;
+    position: sticky;
+    top: 0; /* Stick the navbar at the top of the viewport */
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: flex-end;
+    
+}
+
+
+
+/* Style the dropdown list */
+.dropdown {
+    position: relative;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003049;
+    list-style: none;
+    padding: 0;
+}
+
+/* Style the dropdown items */
+.dropdown-content li {
+    padding: 10px;
+}
+
+/* Show the dropdown content when the parent (Programs) is hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Apply styles to the centered div */
+.welcome {
+    width: 70%; /* Set a fixed width or use percentages as needed */
+    margin-top: 30px;
+    text-align: center; /* Center content horizontally */
+    margin-left: 50px;
+}
+
+
+
+
+ .main {
+    display: flex;
+    height: 100vh;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.blinking-text {
+    font-weight: bolder;
+    animation: blink 4s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        color:#003049;
+    }
+    25% {
+        color: red;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: gold;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+h1 {
+    color: white;
+    font-size: 5rem; /* Adjust font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: white;
+    font-size: 2rem; /* Adjust font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+footer {
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+    background-color: #003049;
+    width: 100vw;
+}
+
+footer p {
+    color: white;
+}
+
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: center;
+}
+
+/* Style the navigation items */
+footer li {
+   
+    margin-right: 20px; /* Add spacing between items */
+    margin-left: 20px; /* Add spacing between items */
+    padding: 10px;
+    background-color: #003049;
+     /* Apply a blurred border effect */
+}
+
+
+
+  
