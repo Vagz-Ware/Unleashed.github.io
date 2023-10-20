@@ -7,7 +7,6 @@ const images = [
     "images/pexels-pikx-by-panther-1547248.jpg",
     "images/pexels-sabel-blanco-1638336.jpg",
     "images/pexels-the-lazy-artist-gallery-2247179.jpg",
-    "images/pexels-victor-freitas-841130.jpg",
     ""
         ];
 

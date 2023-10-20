@@ -1,14 +1,66 @@
 body {
-    background-color: whitesmoke;
+    background-color: rgb(250, 240, 230);
 }
 
-.nav-container {
-    width: 100vw;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+.fade-in {
+    opacity: 0;
+    transition: opacity 4s;
+  }
+  .fade-in.visible {
+    opacity: 1;
+  }
+
+  .bordered-element {
+    border-bottom: solid 5px #003049;
+    border-right: solid 5px #003049;
+    padding: 25px;
+  }
+  
+  .bordered-element-2 {
+    border-bottom: solid 5px #003049;
+    border-right: solid 5px #003049;
+    padding: 25px;
+  }
+  
+  
+  
+@keyframes pencil {
+    0% {
+        transition: border-color 0.5s ease-in-out 0.5s;
+        border-color: #03a4fa #fff #fff #fff;
+        top:0%;
+      left: 0%;
+    }
+    25% {
+        transition: border-color 0.5s ease-in-out 0.5s;
+        border-color: #fff #03a4fa #fff #fff;
+        top:0%;
+      right: 100%;
+    }
+    50% {
+        transition: border-color 0.5s ease-in-out 0.5s;
+        border-color: #fff #fff #03a4fa #fff;
+        top:100%;
+      right: 100%;
+    }
+    75% {
+        transition: border-color 0.5s ease-in-out 0.5s;
+        border-color: #fff #fff #fff #03a4fa;
+        top:100%;
+      right: 0%;
+    }
+    100% {
+        transition: border-color 0.5s ease-in-out 0.5s;
+        border-color: #fff #fff #fff #fff;
+        top:0%;
+      right: 0%;
+    }
+  }
+  
+  .pencil-border {
+    border: 3px solid #fff;
+    animation: pencil 3s infinite linear;
+  }
 
 /* Style the dropdown list */
 .dropdown {
@@ -70,6 +122,9 @@ nav {
     position: sticky;
     top: 0; /* Stick the navbar at the top of the viewport */
     z-index: 100;
+    background-color: #0B0B0B;
+    /* background-color: #252525; */
+    
 }
 
 
@@ -122,6 +177,7 @@ footer p {
     height: 200px; /* Set a fixed height or use percentages as needed */
     text-align: center; /* Center content horizontally */
     
+    
 }
 
 
@@ -132,14 +188,13 @@ footer p {
     align-items: center;
     width:100%;
     margin-right: -10px;
-    
+    margin-top: -90px;
 }
 
 .main a {
     text-decoration: none;
-    color: white;
-    
     padding: 10px;
+    color: #0B0B0B;
 }
 
 /* Change link color on hover */
@@ -149,7 +204,7 @@ footer p {
 
 
 .main h2 {
-    background-color: #003049;
+    color: #0B0B0B;;
 }
 
 .center-button a {
@@ -164,24 +219,83 @@ footer p {
   }
 
 button {
-    padding: 10px;
-    margin: 20px;
+    padding: 3px;
+    margin: 10px;
     border-radius: 10px;
     font-size: large;
     font-weight: bold;
     font-family: 'Arial', sans-serif;
-    border: 5px solid  #03a4fa;;
-    background-color: white;
+    border: 5px solid  red;
+    background-color: red;
+    color: #0B0B0B;
+
+}
+
+/* Define a modified blinking animation */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 2;
+    }
+}
+
+/* Apply the modified blinking animation to your buttons */
+button {
+    animation: blink 3s infinite;
+    color: white; /* Set text color to contrast with the background */
+    background-color: red; /* Set the background color to your desired color */
+    text-decoration: none;
+}
+
+
+
+
+button a {
+    color: #0B0B0B;
+    text-decoration: none;
 }
 
 button:hover{
-    padding: 15px;
+    padding: 8px;
 }
 
-
+.lou{
+    height: 500px;
+    width: 600px;
+}
 .vince{
     margin: 20px;
+    height:95%;
+    width:95%;
     
+}
+
+.container {
+    width: 30%;
+    height: 550px;
+    display: inline-block;
+    text-align: justify;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and border in the width */
+    margin-left: 20px;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
 }
 
 .vince-info {
@@ -189,27 +303,32 @@ button:hover{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    height: 80%;
+    width: 90%;
     
 }
 
 .vince-pic {
-    max-width: 40%;
-    margin-right: 200px;
-    margin-top: 20px;
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 5%;
 }
 .vince-bg {
     
     color: black;
-    max-width: 40%;
-    padding: 20px;
+    width: 100%;
+    padding: 30px;
     text-align: justify;
     font-size: medium;
-    margin-top: -90px;
+    margin-top: -45px;
+    margin-left: 120px;
+    
 }
 
 .Mentzer {
     margin: 20px;
     margin-top: 60px;
+    
 }
 
 .Mentzer-info {
@@ -231,6 +350,20 @@ button:hover{
     font-size: medium;
     margin-top: -210px;
     margin-left: 100px;
+}
+
+.mbooks .container {
+    
+        max-width: 350px;
+        max-height: 600px;
+        display: inline-block;
+        text-align: justify;
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin: 10px;
+        box-sizing: border-box; /* Include padding and border in the width */
+        margin-left: 50px;
+   
 }
 
 .Meadows {
@@ -263,22 +396,319 @@ button:hover{
 h2 {
     text-align: center;
     margin: 20px;
-    color: white;
+    color: #0B0B0B;;
     padding: 10px;
     text-shadow: 2px 2px 4px white(0, 0, 0, 0.5);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.holder {
-    background-color: #003049;
+/* Define a blinking animation with different colors */
+@keyframes colorBlinker {
+    0% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: orange;
+    }
+    100% {
+        color: purple;
+    }
 }
+
+/* Apply the color-changing animation to your h2 */
+h2 {
+    animation: colorBlinker 4s linear infinite;
+}
+
+/* Set an initial color for your h2 */
+h2 {
+    color: black;
+}
+
+
+
 
 h1 {
-    font-size: xx-large;
-    margin-top: 90px;
+    margin-top: 40px;
     padding: 10px;
     text-align: center;
-    color: white;
+    color:#0B0B0B;;
 }
 
 
+/* Mobile Styles */
+@media (max-width: 767px) {
+    /* Adjust styles for mobile screens here */
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        color:#0B0B0B;;
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: #0B0B0B;;
+        padding: 10px;
+        text-shadow: 2px 2px 4px white(0, 0, 0, 0.5);
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        
+        position: absolute;
+        top: 50px;
+        left: 1;
+        width: 24%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    nav li {
+        margin-left: 2px;
+    }
+
+   nav {
+    margin-bottom: 100px;
+
+   } 
+
+    ul.active {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: flex;
+    }
+
+    .main {  
+        width:80%;
+        border: solid 3px red;
+    }
+    
+    .main a {
+        text-decoration: none;
+        color: white;
+        
+        padding: 10px;
+    }
+    
+    /* Change link color on hover */
+    .main a:hover {
+        padding: 10px;
+    }
+    
+    .center-button a {
+        color: black;
+        /* Optionally, you can use other CSS properties to style the container */
+      }
+    
+    .center-button {
+        text-align: center;
+        color: black;
+        /* Optionally, you can use other CSS properties to style the container */
+      }
+    
+    button {
+        padding: 3px;
+        margin: 5px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-family: 'Arial', sans-serif;
+        border: 2px solid  #03a4fa;;
+        background-color: white;
+        width: 90%;
+    }
+    
+    button:hover{
+        padding: 5px;
+    }
+
+    img {
+        width: 80vw;
+    }
+    
+    .lou{
+        height: 300px;
+        width: 90vw;
+        margin-left: -80px;
+    }
+    .vince{
+       
+        width: 100vw;
+            display: block;
+            text-align: justify;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            box-sizing: border-box; /* Include padding and border in the width */
+        
+    }
+    
+    .container {
+        width: 90%;
+        height: 80%;
+        text-align: justify;
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin: 10px;
+        box-sizing: border-box; /* Include padding and border in the width */
+    }
+    
+    .container img {
+        width: 90%;
+        height: auto;
+    }
+    
+    .vince-info {
+        width: 100vw;
+            
+            display: block;
+            text-align: justify;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            box-sizing: border-box; /* Include padding and border in the width */
+        
+    }
+    
+    .vince-pic {
+        margin-right: 5%;
+        margin-top: 5%;
+        width: 90vw;
+    }
+    .vince-bg {
+        color: black;
+        padding: 5px;
+        text-align: justify;
+        width: 90%;
+        width: 90%;
+            max-height: 600px;
+            display: block;
+            text-align: justify;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            box-sizing: border-box; /* Include padding and border in the width */
+        
+    }
+    
+    .Mentzer {
+        width: 100vw;
+    }
+    
+    .Mentzer-info {
+        width: 100vw;
+            display: block;
+            text-align: justify;
+            border: 1px solid #ccc;
+            padding: 3px;
+            margin: 10px;
+            box-sizing: border-box; /* Include padding and border in the width */
+    }
+    
+    .Mentzer-pic {
+        width: 90vw;
+    }
+    .Mentzer-bg {
+        width: 800px;
+        height: 400px;
+        overflow: hidden;
+        text-align: justify;
+
+            border: 1px solid #ccc;
+            margin: 10px;
+            box-sizing: border-box; /* Include padding and border in the width */
+        
+    }
+    
+    .mbooks .container {
+        
+        width: 90%;
+            max-height: 600px;
+            display: inline-block;
+            text-align: justify;
+            border: 1px solid #ccc;
+            padding: 15px;height: 400px;
+            margin: 10px;
+            box-sizing: border-box; /* Include padding and border in the width */
+            
+       
+    }
+    
+    .Meadows {
+        width: 90%;
+            max-height: 300px;
+            display: inline-block;
+            text-align: justify;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            box-sizing: border-box; /* Include padding and border in the width */
+        
+    }
+    
+    .Meadows-info {
+        display: inline-block;
+        margin-top: 30px;
+        width: 90%;
+        width: 90%;
+            max-height: 600px;
+            display: inline-block;
+            text-align: justify;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            box-sizing: border-box; /* Include padding and border in the width */
+        
+    }
+    
+    .Meadows-pic {
+        width: 90%;
+        margin-bottom: 100px;
+    }
+    .Meadows-bg {
+        color: black;
+        width: 90%;
+        text-align: justify;
+        margin-top: 1px;
+    }
+    
+    
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Adjust styles for tablets here */
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    /* Adjust styles for desktop screens here */
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}

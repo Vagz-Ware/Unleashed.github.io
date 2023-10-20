@@ -4,7 +4,7 @@ body {
 
 /* Style the navbar */
 nav {
-    background-color: #003049;
+    background-color: #0B0B0B;
     padding: 12px;
     display: flex;
     justify-content: flex-end; /* Align the list to the right */
@@ -176,11 +176,6 @@ footer h2 {
     background-color: #003049;
 }
 
-
-.main h2 {
-    background-color: #003049;
-}
-
 .center-button {
     text-align: center;
     /* Optionally, you can use other CSS properties to style the container */
@@ -203,16 +198,14 @@ button:hover{
     padding: 20px;
 }
 
-.holder {
-    background-color: #003049;
-}
+
 
 h1 {
-    font-size: xx-large;
-    margin-top: 90px;
+    font-size: 4rem;
+    margin-top: 40px;
     padding: 10px;
     text-align: center;
-    color: white;
+    color:#0B0B0B;;
 }
 
 .vince{
@@ -339,4 +332,33 @@ h2 {
 .container img {
     max-width: 100%;
     height: auto;
+}
+
+/* Define a blinking animation with different colors */
+@keyframes colorBlinker {
+    0% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: orange;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+/* Apply the color-changing animation to your h2 */
+h2 {
+    animation: colorBlinker 4s linear infinite;
+}
+
+/* Set an initial color for your h2 */
+h2 {
+    color: black;
 }

@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for the first row */
+    grid-template-rows: repeat(2, 1fr); /* Two rows: first row with two columns, second row with four columns */
+    gap: 10px; /* Adjust the gap as needed */
+    width: 600px; /* Adjust the container width as needed */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .large-grid {
+    background-color: #3498db; /* Blue background color for large grids */
+  }
+  
+  .small-grid {
+    background-color: #e74c3c; /* Red background color for small grids */
+  }
+  
